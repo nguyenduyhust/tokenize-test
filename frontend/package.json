@@ -1,0 +1,40 @@
+{
+  "name": "frontend",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "gen:api-type": "./node_modules/.bin/ts-node --skip-project scripts/gen-api-type.ts"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "next": "12.0.2",
+    "notistack": "^1.0.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2",
+    "redux-promise": "^0.6.0",
+    "socket.io-client": "2.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "16.11.6",
+    "@types/react": "17.0.34",
+    "@types/redux-promise": "^0.5.29",
+    "@types/socket.io-client": "^1.4.36",
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "@typescript-eslint/parser": "^5.3.0",
+    "eslint": "^8.1.0",
+    "eslint-config-next": "12.0.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "openapi-typescript": "^4.4.0",
+    "prettier": "^2.4.1",
+    "redux-devtools-extension": "^2.13.9",
+    "ts-node": "^10.4.0",
+    "typescript": "4.4.4"
+  }
+}
