@@ -1,0 +1,17 @@
+runtime: nodejs14
+
+env: standard
+
+service: frontend
+
+handlers:
+- url: /.*
+  secure: always
+  redirect_http_response_code: 301
+  script: auto
+
+entrypoint: npm run start
+
+env_variables:
+  NEXT_PUBLIC_API_BASE_URL: https://tokenize-developer-test.as.r.appspot.com/
+  NEXT_PUBLIC_SOCKET_URL: wss://tokenize-developer-test.as.r.appspot.com/

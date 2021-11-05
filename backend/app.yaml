@@ -1,0 +1,13 @@
+runtime: nodejs14
+
+env: standard
+
+service: default
+
+handlers:
+- url: /.*
+  secure: always
+  redirect_http_response_code: 301
+  script: auto
+
+entrypoint: npm run start:prod
